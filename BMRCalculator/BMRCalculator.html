@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMRCalculator</title>
+<link href="BMRCalculator.css" rel="stylesheet" type="text/css">
+<script src="BMRCalculator.js"></script>	
+</head>
+<body>
+	
+	<button class="tablink" onclick="openPage('Home', this, '#FE9191')">Metric DMR Calculator</button>
+	<button class="tablink" onclick="openPage('News', this, '#FFC0D0')" id="defaultOpen">Imperial BMR calculator</button>
+	<div id="Home" class="tabcontent">
+		<fieldset>
+			<br><br>
+				  Gender :&nbsp;&nbsp;
+				   <select id="gender">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			</select><br><br>
+				  Age :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				   
+				  <input type="text" id="age"><br><br>
+			 
+			<span>Your Height</span>	<br> 
+	  <label>Feet:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				 
+					<input type="number" step="any" id="feet"  required=""><br><br>
+			 
+				  Inches:&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="number" step="any" min="0" name="inches" id="inches"  required="">
+				<br><br>
+			<span>Your Weight </span><br>	  
+	  <label>Stones:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				  
+					<input type="number" step="any" min="0" name="stone" id="stone" required=""><br><br>
+	 <label>Pounds:&nbsp;&nbsp;&nbsp;</label>
+					<input type="number" step="any" min="0" name="Pounds" id="Pounds" required=""><br><br>
+			
+				  Current Activity Level:<br>
+				
+				  &nbsp;
+				 <select id="activitylevel">
+					<option value="a">I am sedentary (little or no exercise)</option>
+					<option value="b">I am lightly active (light exercise or sports 1-3 days per week)</option>
+					<option value="c">I am moderately active (moderate exercise or sports 3-5 days per week)</option>
+					<option value="d">I am very active (hard exercise or sports 6-7 days per week)</option>
+					<option value="e ">I am super active (very hard exercise or sports and a physical job or 2x training)</option>
+				</select>
+			
+	</fieldset>
+	<br>
+	<input type="button" id="imperial" value="Submit" onclick="Calculate()"/>
+		<br><br>
+		<fieldset><p>Your BMR is:
+					<p id="ImperialBmp"></p> </p>
+					<p>Your Maintenance Calories are:</p>
+					<p id="Imperialcalories"></p></fieldset>
+	<br>
+	  </div>
+	  
+	  <div id="News" class="tabcontent">
+		<fieldset>
+			<br><br>Gender  :&nbsp;&nbsp; <select id="mgender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				</select><br><br/>
+			Weight :&nbsp; <input type="text" id="mweight" />(kg.)<br><br />
+			Height :&nbsp;&nbsp; <input type="text" id="mheight" />(cm)<br><br />
+			Age     :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="mage" /><br><br><br />
+			Current Activity Level: <br/><select id="mactivitylevel">
+				<option value="s">I am sedentary (little or no exercise)</option>
+				<option value="li">I am lightly active (light exercise or sports 1-3 days per week)</option>
+				<option value="m">I am moderately active (moderate exercise or sports 3-5 days per week)</option>
+				<option value="very">I am very active (hard exercise or sports 6-7 days per week)</option>
+				<option value="super ">I am super active (very hard exercise or sports and a physical job or 2x training)</option>
+			</select>
+			<br>
+			<br/>
+			<br>
+			<br/>
+			<br>
+			<br>
+			<br>
+			</fieldset>
+			<br>
+			<input type="button" id="metric" value="Submit" onclick="metricCalculate()"/>
+		<br><br>
+		<fieldset>
+		<p>Your BMR is:</p>
+		<p id="bmr"></p>
+		<p>Your Maintenance Calories are:</p>
+		<p id="calories"></p>
+		</fieldset>
+	
+	  </div>
+		
+		
+	
+        
+</body>
+
+</html>

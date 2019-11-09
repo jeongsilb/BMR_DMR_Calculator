@@ -1,0 +1,59 @@
+﻿
+#tdname {
+	text-align: right;}
+
+/*#allpage	{
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px gray;
+	border: thin solid #707000;
+	padding: 15px;
+	background-color: #FFFFFF;
+	opacity: 0.8;} */
+
+
+	* {box-sizing: border-box}
+
+	/* Set height of body and the document to 100% */
+body {
+	background-size: 100% auto;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+	font-family: Arial;
+	background-image: url('images/bmr-calculator-definition.jpg');
+		background-repeat: no-repeat;
+	background-attachment: inherit;
+	opacity: 0.95;
+}
+	
+	/* Style tab links */
+	.tablink {
+		background-color: #555;
+		color: white;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+		width: 25%;
+		border-radius: 15px;
+	}
+	
+	.tablink:hover {
+		background-color: #777;
+	}
+	
+	/* Style the tab content (and add height:100% for full page content) */
+	.tabcontent {
+	color: white;
+	padding: 100px 20px;
+	height: 100%;
+	border-radius: 15px;
+	display: none;
+	}
+
+	
+	#Home {background-color:#FE9191;}
+	#News {background-color: #FFC0D0;}
